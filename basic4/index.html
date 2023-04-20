@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 카멜(낙타)--> buttonOnclick
+    // snake --> button_onclick_action
+    // 파스컬 --> ButtonOnclick
+
+    // 변수를 선언할때의 규칙
+    // 1. 변수이름은 카멜방식으로 많이 한다
+    // --> 카멜방식은 첫글자는 소문자, 연결된 단어의 첫글자는 대문자로 시작한는 작성법을 의미
+
+    let userName = "길똥이";
+
+    // 2. 변수이름은 _,$,문자열로 시작한다.(그외의 특수문자는 사용할 수 없다.)
+    // let 12day='월요일'; (x) --> 숫자로 시작하지 않음
+    //let #day = '화요일'; (x) --> _,$ 외의 특수문자로 시작하지 않음.
+
+    let r12 = '1'; //(ㅇ) 문자를 적고 숫자를 적는건 가능.
+    // let as#asdf ='ewr'; (x) --> 중간에도 안됨
+    let day$ = "목요일"; // (ㅇ) 되긴 되지만, $앞쪽에 쓰지 뒷쪽에 안씀.
+    let _day12 = "금요일"; // (o) _로 시작
+    let $day12 = "수요일"; // (o) $로 시작 뒤 숫자 가능
+    console.log(day$)
+    console.log(r12)
+    console.log(_day12)
+
+    // 3. 상수나 축약어는 대문자나 스네이크 방식을 자주 사용한다.
+    const HTML = 'Hyer Text Markup Language';
+    const MAX_LEVEL = 99;
+
+    // 4. 변수나 상수 선언시 예약어, 키워드는 사용할 수 없다.
+    // let const = 2;(x)
+    
+
+
+
+
+  </script>
+
+</body>
+
+</html>
