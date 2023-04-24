@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let num = 30;
+    let str = '문자';
+    let blo = true;
+
+    // typeof : 변수에 저장되어 있는 데이터의 type을 알수 있는것.
+    console.log(typeof num); //number
+    console.log(typeof str); //string(문자)
+    console.log(typeof(blo)); //괄호로 해도됨 boolean(true/false 두개의 값만 가짐.)
+    console.log(typeof('똥땅'));
+    console.log(typeof(1));
+    console.log(typeof true);
+    console.log(Boolean(1)); //true?
+    console.log(Boolean(1124124124)); //true?
+    console.log(Boolean(0)); //false 0을 제외한 모든 값은 true
+
+    let str1="문자";
+    let str2='문자';
+    console.log(str1 == str2)
+    let str3='문자는 "문자"다';
+    console.log(str3)
+    let str4="문자는 '문자'다";
+    console.log(str4) //둘다 안의 따옴표는 잘 나옴.
+    // 바깥쪽은 작은 따옴표로 처리했다면 안쪽은 큰 따옴표로 처리하고,
+    // 안쪽을 작은 따옴표로 처리했다면 바깥쪽은 큰 따옴표로 처리한다.
+
+    let str5="문자는 또는 \"문자\"다"; //따옴표라는 문자가 되어버림. \"\" <--요놈들
+    console.log(str5)
+    //특수한 목적을 위해 '\'' (역슬레시)를 사용하는 경우가 있는데,
+    // 이것을 이스케이프 시퀀스(escape sequence)라고 한다.
+   /*
+    \n : 행바꿈
+    \t : 탭문자(탭tab 만큼 띄워쓰기)
+    \\ : 역슬레시 표현 (문자안에)
+    \' : 작은따옴표 표현
+    \" : 큰따옴표 표현
+    */
+
+    var str6= 'you\'re to smart...';
+    console.log(str6) //you're to smart... 중간에 작은따옴표 뜸.
+
+
+  </script>
+  
+</body>
+</html>
