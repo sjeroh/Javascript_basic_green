@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+<script>
+  //if문
+  //if조건문
+  // if(조건문){
+  //   조건이 참일때 실행문
+  // }else{
+  //   조건이 거짓일떄 실행문
+  // }
+
+
+
+
+  let 날씨 = false;
+  if(날씨){
+    console.log('등산간다.')
+  }else{
+    console.log('집에서 전붙여먹음.')
+  }
+
+
+  let 나이 =18;
+  if(나이>=18){
+    console.log('성인')
+  }else{
+    console.log('청소년')
+  }
+
+  // if(조건문A){
+  //   조건문이 참일때의 실행문
+  // }else if(조건문B){
+  //   조건문A는 만족하지 못한다
+  //   조건문B는 만족할때
+  // }else if(조건문C){
+  //   조건문A,B 다 만족 못하고
+  //   조건문C를 만족함
+  // }else{
+  //   조건문 A,B,C 모두 만족하지 못함
+  //   그외의것들
+  // }
+
+  let 성적=67;
+  if(성적>=90){
+    console.log('우수학생입니다.')
+  }else if(성적>=80){
+    console.log('준우수학생입니다.')
+  }else if(성적>=70){
+    console.log('평타칩니다.')
+  }else{
+    console.log('낙제.')
+  }
+
+  let age = prompt('나이를 입력하세요','');
+  console.log(age)
+  var 입장료='';
+  if(age<13 || age>=65){
+    입장료 = '2000원입니다.'
+  }else if(age>=13 && age<20){
+    입장료 = '3000원입니다.'
+  }else{
+    입장료= '4000원입니다.'
+  }
+  console.log(입장료) //변수는 콘솔에 따옴표로 묶으면 안된다.
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
