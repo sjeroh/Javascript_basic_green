@@ -74,9 +74,31 @@
   console.log(입장료) //변수는 콘솔에 따옴표로 묶으면 안된다.
 
 
+//이중if문
 
+// if(조건문){
 
+// }else
 
+var html =90;
+var css =30;
+var javascript=90;
+
+var avg=(html+css+javascript)/3;
+var 통보;
+
+if(avg>=60){
+  if(html<40){
+  통보 = 'HTML 40점미만 불합격입니다.'
+  }else if(css<40){
+  통보 = 'css 40점미만 불합격입니다.'
+  }else if(javascript<40){
+  통보 = 'javascript 40점미만 불합격입니다.'
+  }
+}else{
+  통보 = '평균'+ avg + '점 불합격입니다.'
+};
+console.log(통보)
 
 
 </script>
