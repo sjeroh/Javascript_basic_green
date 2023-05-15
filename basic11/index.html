@@ -1,111 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-  
+    <script>
+        // 함수
+        // 함수는 하나의 실행문을 저장하고 변수는 하나의 데이터를 저장하여 사용합니다.
+        // 함수는 스크립트 실행문을 보관하는 역할을 하기 때문에 반복사용되는 코드를 구조화하거나 재활용을 목적으로 사용합니다
+
+        // 함수에서 사용되는 용어
+        // 매개변수:함수에 자료를 넘기기 위한 변수
+        // 리턴값: 함수를 실행하고 나오는 결과 값
+        // 콜백함수:함수에 매개변수로 함수를 전달할때 사용하는 함수
+        // 호출:함수 내부를 실행시킬때 호출이라고 표현함
+
+        // for (let i = 0; i < 5; i++) {
+        //     //document.write("이것은 빨간색"+ i+ "입니다")
+        //     document.write(`이것은 빨간색${i}입니다<br/>`)
+        // }
+        // for (let i = 0; i < 5; i++) {
+        //     document.write(`이것은 파란색${i}입니다<br/>`)
+        // }
+        // for (let i = 0; i < 5; i++) {
+        //     document.write(`이것은 초록색${i}입니다<br/>`)
+        // }
+
+        function colorName(color){
+            for (let i = 0; i < 5; i++) {
+            document.write("이것은"+ color + i + "입니다<br/>")
+            //document.write(`이것은 ${color}${i}입니다<br/>`)
+         }  
+        }
+        colorName("빨간색");//호출
+        colorName("파란색");
+        colorName("초록색");
+
+        // 선언적 함수
+        // 가장 기본적으로 사용하는 함수의 형태입니다.
+        // 기본적으로 함수는 함수 이름을 설정하고 함수이름을 
+        // 호출해야 실행이 됩니다.
+
+        방앗간("송편")
+
+        function 방앗간(데야){
+            console.log(데야 + "떡입니다.")
+        }
+        방앗간("쑥")
+        방앗간("무지개")
 
 
+        //두개의 동일한 함수가 있는경우에는 뒤에 있는
+        //함수가 호출됩니다.
+        function 샤넬미용실(){
+            document.write("머리를 해 드립니다.")
+        }
+        function 샤넬미용실(){
+            document.write("파마를 해 드립니다.")
+        }
 
-  <script>
+        샤넬미용실()
 
-    // 함수
-    // 함수는 하나의 실행문을 저장하고 변수는 하나의 데이터를 저장하여 사용합니다.
-    // 함수는 스크립트 실행문을 보관하는 역할을 하기 때문에 반복사용되는 코드를 구조화 하거나 재활용하는 목적으로 사용합니다
+        //이름이 없는 함수 (익명함수)
+        //함수에 이름이 없기때문에 변수에 넣어서 사용한는 함수
 
-    // 함수에서 사용되는 용어
-    // 매개변수: 함수에 자료를 넘기기 위한 변수
-    // 리턴값: 함수를 실행하고 나오는 결과 값
-    // 콜백함수: 함수에 매개변수로 함수를 전달할때 사용하는 함수
-    // 호출: 함수 내부를 실행시킬때 호출이라고 표현함
+        //함수변수();//미리부를수 없다.
+        let 함수변수=function(){
+            //실행코드
+            document.write("익명함수실행")
+        }
 
+        함수변수();
 
+        document.write("<br>")
+        //매개변수가 있는 함수
+        //변수를 통해 함수의 값을 전달하는 함수입니다.
 
-    // for(let i=0; i<5; i++){
-    //   document.write(`이것은 빨간색 ${i} 입니다.<br/>`)
-    //   // document.write('이것은 빨간색'+ i + '입니다.')
-    // }
-    // for(let i=0; i<5; i++){
-    //   document.write(`이것은 파란색 ${i} 입니다.<br/>`)
-    // }
-    // for(let i=0; i<5; i++){
-    //   document.write(`이것은 초록색 ${i} 입니다.<br/>`)
-    // }
+        function 매개변수함수(매개변수1, 매개변수2){
+            document.write(매개변수1+"와"+매개변수2)
+        }
+        매개변수함수("딸기", "바나나")
+        
+        document.write("<br>")
+        function 배달의민족(전화){
+            document.write(`여기는 ${전화} 입니다. 짜장면 2개 주세요`)
+        }
+        배달의민족("경성대")
+    </script>
 
-    function colorName(color){
-      for(let i=0; i<5; i++){
-      // document.write(`이것은 ${color}${i} 입니다.<br/>`)
-      document.write('이것은 '+ color+i+ ' 입니다.<br/>')
-      }
-    }
+    <script>
+        //리턴문(return)을 사용한 매개변수가 있는 함수
+        // 결과값이 있는 함수입니다. return이라는 키워드를 이용하여
+        // 함수의 결과값을 출력하는 방법입니다. 리턴은 실행문을
+        // 강제로 종료하는 역할도 합니다.
 
-    colorName("빨간색"); //(괄호사이는 매개변수라고함), 또한 함수를 부르는것 호출!
-    colorName("파란색"); //(괄호사이는 매개변수라고함)
-    colorName("초록색"); //(괄호사이는 매개변수라고함)
+        function 리턴문(num){
+            return num * num;
+            console.log("실행될까?")//실행안됨
+        }
+        let result = 리턴문(3)
+        console.log(result)
 
-    방앗간("메밀")
-    // 먼저 호이스팅해서 저장하고 함수 실행
+        function 리턴문2(num, num2){
+            return num + num2
+        }
+        let result2=리턴문2(10,20)
+        console.log(result2)
+        //호출하여 콘솔에 찍는음 10,20
+    </script>
 
-    // 선언적 함수
-    // 가장 기본적으로 사용하는 함수의 형태입니다.
-    // 기본적으로 함수는 함수 이름을 설정하고, 함수 이름을 호출해야 실행이 됩니다.
+    <script>
+        //재귀함수
+        //함수내에서 자신을 다시 호출하는 함수를 말합니다.
+        //함수를 반복문처럼 사용할때 이용합니다
 
-    function 방앗간(대야){
-      console.log(대야 +'떡입니다.')
-    }
+        // function 재귀함수(){
+        //     실행문;
+        //     재귀함수();
+        // }
 
-    방앗간("쑥")
-    방앗간("찹쌀")
-    방앗간("무지개")
+        // 재귀함수();
 
-//두개의 동일한 함수가 있는 경우에는 뒤에 있는 함수가 호출됩니다.
-    function 구찌이용원(){
-      document.write(`이쁜 빡빡이 만들어드립니다.`)
-    }
-    function 구찌이용원(){
-      document.write(`귀여운 빡빡이 만들어드립니다.`)
-    }
+        function 재귀함수(num){
+            if(num == 0){
+                document.write('함수의 실행이 종료합니다.')
+            }else{
+                document.write('함수가 실행중입니다.<br>')
+                재귀함수(num - 1)
+            }
+            
+        }
+        재귀함수(5)
+    </script>
+    <script>
+        //콜백함수
+        //함수를 변수에 저장하고 변수를 함수의 인자로 사용하여
+        //매개변수에 전달되는 함수
 
-    구찌이용원()
-    document.write("<br>")
-
-    // 함수변수(); 미리 부를 수 없다.
-
-    // 이름이 없는 함수 (익명함수)
-    // 함수에 이름이 없기 때문에 변수에 넣어서 사용해야한다.
-    let 함수변수 = function(){
-      //실행코드
-      document.write("익명 함수 실행")
-
-    }
-
-    함수변수();
-    document.write("<br>")
-
-    //매개변수가 있는 함수
-    // 변수를 통해 함수의 값을 전달하는 함수입니다
-
-    function 매개변수함수(매개변수1, 매개변수2){
-      document.write(`${매개변수1} 와 ${매개변수2}`)
-    };
-
-    매개변수함수("딸기","바나나");
-
-    document.write("<br>")
-    
-    function 배달의민족(전화){
-      document.write(`여기는 ${전화}입니다. 예 거기 ${전화}이죠? 짜장면 2개랑 단무지 쫌 개많이 주쏘!!`)
-    }
-
-
-    배달의민족("경성대학반점")
-  </script>
-
-
+        function 콜백함수(num){
+            for(let i=0; i<3; i++){
+                num(i)
+            }
+        }
+        var 인자변수= function 인자(){
+            document.write("콜백함수가 실행되었습니다<br>")
+        }
+        콜백함수(인자변수)
+    </script>
 
 </body>
+
 </html>

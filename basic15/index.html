@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 반복문 -for, do while문, while문 -->
+  <script>
+    // while문
+    // let e=초기값;
+    // while(조건문){
+    //   실행문
+    //   증가감식;
+    // }
+
+    let x=0;
+
+    while(x<5){
+      console.log(x)
+      x++;
+    }
+
+    let y=0;
+
+    while(y<10){
+      y++;
+      if(y%2 == 0 ) //% 나누고 나머지 구하기
+      // 짝수를 뜻한다.
+      {
+        continue; // 해당하는 사항은 건너뛰기
+      
+      }
+      console.log('y:',y)
+      
+    }
+
+    let m=0;
+
+    while(m<10){
+      m++;
+      if(m == 5 ) //% 나누고 나머지 구하기
+      // 짝수를 뜻한다.
+      {
+        break; //break는 while 전체에서 벗어남
+      
+      }
+      console.log('m:',m)
+      
+    }
+
+  </script>
+  
+</body>
+</html>
