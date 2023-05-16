@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let today = new Date()
+    console.log(today)
+    // toDateString() 메서드는 미국 영어로 사람이 읽을 수 있는 형태로 Date 객체의 날짜 부분을 반환합니다. 시간은 안나오네요..?
+    document.write(today.toDateString())
+    document.write(' - toDateString() <br>')
+
+    // Date 객체의 날짜 부분을 지역의 언어에 맞는 문자열 표현으로 반환한다.
+    document.write(today.toLocaleDateString())
+    document.write(' - toLocaleDateString() <br>')
+
+    // Date.. 
+    document.write(today.toTimeString())
+    document.write(' - toTimeString() <br>')
+
+    document.write(today.toLocaleTimeString())
+    document.write(' - toLocaleTimeString() <br>')
+    
+    // Date 객체 날짜의 문자열 표현을 지역의 언어에 맞는 형식으로 반환한다.
+    document.write(today.toLocaleString())
+    document.write(' - toLocaleString() <br>')
+
+    //UTC시간대
+    //협정 세계시(UTC)는 전 세계 시간 연구소가 보유하는 시간의 척도
+
+    document.write(today.toUTCString())
+    document.write(' - toUTCString() <br>')
+  </script>
+</body>
+</html>
